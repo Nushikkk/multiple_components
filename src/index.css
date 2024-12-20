@@ -1,0 +1,196 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #F9F4F4; /* Soft Off-white */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header Styles */
+.header {
+  background-color: #F7C8D9; /* Pastel Pink */
+  color: white;
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 38px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Item Form Styles */
+.item-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 30px;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.item-form input,
+.item-form select {
+  padding: 14px 18px;
+  margin: 12px 0;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.item-form input:focus,
+.item-form select:focus {
+  border-color: #F7C8D9; /* Pastel Pink */
+  outline: none;
+}
+
+.item-form button {
+  padding: 14px 20px;
+  background-color: #F4A7A1; /* Light Coral */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item-form button:hover {
+  background-color: #F2897E; /* Slightly darker coral */
+  transform: translateY(-5px);
+}
+
+.item-form button:active {
+  transform: translateY(2px);
+}
+
+/* Category List Styles */
+.category-list {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.category-list button {
+  padding: 14px 28px;
+  background-color: #F1B6C1; /* Blush Pink */
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.category-list button:hover {
+  background-color: #EFA5B1; /* Lighter blush pink */
+  transform: translateY(-5px);
+}
+
+.category-list button:active {
+  transform: translateY(2px);
+}
+
+/* Item List Styles */
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.item {
+  background-color: #F3D0D1; /* Pale Rose */
+  padding: 18px;
+  margin: 12px 0;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.item:hover {
+  background-color: #F1B1B3; /* Slightly darker pale rose on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.item .item-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.item .item-category {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Footer Styles */
+.footer {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer:hover {
+  color: #F7C8D9; /* Pastel Pink on hover */
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .category-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .item-form input,
+  .item-form select {
+    font-size: 14px;
+  }
+
+  .item-form button {
+    font-size: 14px;
+  }
+
+  .item {
+    padding: 15px;
+  }
+}
